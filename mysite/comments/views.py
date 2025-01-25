@@ -91,7 +91,7 @@ def update_comment(request, comment_id):
         return JsonResponse({'result': 'success', 'comments': comments})
 
 
-
+#댓글삭제
 def delete_comment(request, comment_id):
     if not request.user.is_authenticated:
         return JsonResponse({'result': 'error', 'message': '로그인 후 이용해주세요.'})
